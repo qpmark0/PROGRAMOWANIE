@@ -13,7 +13,10 @@ Podstawy programowania:
 */
 
 #include <iostream>
+
 #define _USE_MATH_DEFINES
+#include <math.h>
+
 using namespace std;
 
 void task1()
@@ -48,8 +51,12 @@ void task2()
 
 int main()
 {
-    task2();
+    //task2();
+}   //task3()
+
+
+void task3()
+{
+
 }
-
-
 
