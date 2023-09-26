@@ -3,9 +3,8 @@ Podstawy programowania:
 
 1.program obliczający średnią arytmetyczną dwóch liczb
 
-3. Program obliczający objętość stożka.
-4. Program obliczający pole koła.
-5. Program obliczający wartość wyrażenia a^2 + b^2
+.
+
 6. Program obliczający pole trójkąta o podstawie b i wysokości h
 7. Program obliczający objętość kuli o promieniu r
 8. Program obliczający pole trapezu o podstawach a i b oraz wysokości h
@@ -44,19 +43,45 @@ void task2()
     cin >> sideB;
     double area;
     area = sideA * sideB;
-    //cout << "the area of ​​the rectangle is : " << area << endl;
-
-
+    cout << "the area of ​​the rectangle is : " << area << endl;
 }
+
+//3. Program obliczający objętość stożka
+void task3()
+{
+    double height, radius, volume;
+    cout << "Wpisz długość wysokości: ";
+    cin >> height;
+    cout << "Wpisz długośc promieniu: ";
+    cin >> radius;
+    volume = 1 / 3.0 * M_PI * pow(radius, 2);
+    cout << "cone volume: " << volume << endl;
+}
+
+//4. Program obliczający pole koła.
+void task4()
+{
+    double radius, area;
+    cout << "wpisz długość promienia: ";
+    cin >> radius;
+    area = M_PI * pow(radius, 2);
+    cout << "pole koła:" << area << endl;
+}
+
+//5. Program obliczający wartość wyrażenia a ^ 2 + b ^ 2
+void task5()
+{
+
+    }
+
 
 int main()
 {
-    //task2();
-}   //task3()
-
-
-void task3()
-{
-
+    setlocale(LC_CTYPE, "polish");
+    {
+        //task2();
+        //task3();
+        //task4();
+        task5();
+    }
 }
-
