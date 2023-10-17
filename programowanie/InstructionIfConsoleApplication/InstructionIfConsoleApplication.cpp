@@ -226,14 +226,14 @@ void task10()
 //11. Program, który sprawdzi czy z podanych długości boków można zrobić trójkąt.
 void task11()
 {
-	double dlugosc1, dlugosc2, dlugosc3;
-	cout << "wpisz dlugosc1:" << endl;
-	cin >> dlugosc1;
-	cout << "wpisz dlugosc2:" << endl;
-	cin >> dlugosc2;
-	cout << "wpisz dlugosc3:" << endl;
-	cin >> dlugosc3;
-	if ((dlugosc1 + dlugosc2 > dlugosc3) && (dlugosc1 + dlugosc3 > dlugosc2) && (dlugosc2 + dlugosc3 > dlugosc1))
+	double firstSide, secondSide, thirdSide;
+	cout << "wpisz pierwsza dlugosc:" << endl;
+	cin >> firstSide;
+	cout << "wpisz druga dlugosc:" << endl;
+	cin >> secondSide;
+	cout << "wpisz trzecia dlugosc:" << endl;
+	cin >> thirdSide;
+	if ((firstSide + secondSide > thirdSide) && (firstSide + thirdSide > secondSide) && (secondSide + thirdSide > firstSide))
 	{
 		cout << "Z podanych długosci mozna zrobic trojkat." << endl;
 	}
@@ -248,6 +248,7 @@ void task11()
 //  umożliwiając użytkownikowi wybór operacji(dodawanie, odejmowanie, mnożenie, dzielenie) i wprowadzanie liczb do obliczeń.
 void task12()
 {
+	
 
 }
 
