@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 instrukcje decyzyjne", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InstructionIfConsoleApplication", "InstructionIfConsoleApplication\InstructionIfConsoleApplication.vcxproj", "{E2D01D85-BC06-4C8D-815C-FC0DBF6D51EB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "petla", "petla\petla.vcxproj", "{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -35,6 +37,14 @@ Global
 		{E2D01D85-BC06-4C8D-815C-FC0DBF6D51EB}.Release|x64.Build.0 = Release|x64
 		{E2D01D85-BC06-4C8D-815C-FC0DBF6D51EB}.Release|x86.ActiveCfg = Release|Win32
 		{E2D01D85-BC06-4C8D-815C-FC0DBF6D51EB}.Release|x86.Build.0 = Release|Win32
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Debug|x64.ActiveCfg = Debug|x64
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Debug|x64.Build.0 = Debug|x64
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Debug|x86.Build.0 = Debug|Win32
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Release|x64.ActiveCfg = Release|x64
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Release|x64.Build.0 = Release|x64
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Release|x86.ActiveCfg = Release|Win32
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CEB4A64D-6D06-4610-AD7F-928E8BC10651} = {8A060558-79E7-4A85-8178-611943546D93}
 		{E2D01D85-BC06-4C8D-815C-FC0DBF6D51EB} = {2EDCBD4E-EF61-47B6-A3E2-932E94B8C555}
+		{BC0F880C-8B0C-49E7-BD42-C612B5AF882B} = {2EDCBD4E-EF61-47B6-A3E2-932E94B8C555}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CBD7B0B-2007-46AE-80A3-6C438828ADF4}

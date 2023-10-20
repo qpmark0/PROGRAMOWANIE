@@ -252,6 +252,18 @@ void task12()
 
 }
 
+void task13()
+{
+	double number;
+	cout << "enter the number:" << endl;
+	cin >> number;
+	do
+	{
+		while (number != 0);
+	}
+	
+}
+
 int main()
 {
 	//task3();
@@ -263,5 +275,6 @@ int main()
 	//task9();
 	//task10();
 	//task11();
-	task12();
+	//task12();
+	task13();
 }
