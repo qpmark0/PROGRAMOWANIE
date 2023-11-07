@@ -45,7 +45,7 @@ void task6()
 void task7()
 {
 	int sum = 0;
-	for (int i = 1; i <=100 ; i++)
+	for (int i = 1; i <= 100; i++)
 	{
 		sum = sum + i;
 	}
@@ -55,9 +55,9 @@ void task7()
 //8Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
 void task8()
 {
-	for (int i = 1; i <=10; i++)
+	for (int i = 1; i <= 10; i++)
 	{
-		int power = pow(i,2);
+		int power = pow(i, 2);
 		cout << "Kwadrat liczby wunosi:" << power << endl;
 	}
 }
@@ -83,11 +83,41 @@ void task9()
 	}
 }
 
+//10Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
+void task10()
+{
+
+	for (int i = 1; i <= 10; i++)
+	{
+		int factorial = 1;
+		for (int j = 1; j <= i; j++)
+		{
+			factorial *= j;
+		}
+		cout << "Silnia to: " << factorial << endl;
+	}
+}
+
+//11Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1 = 1, 1x2 = 2, 1x3 = 3 itd.).
+void task11()
+{
+	for (int i = 1; i <= 9; i++)
+	{
+		for (int j = 1; j <= 9; j++)
+		{
+			cout << i << "*" << j << "=" << i*j << "  ";
+		}
+		cout << endl;
+	}
+}
+
 int main()
 {
 	//task6();
 	//task7();
 	//task8();
 	//task9();
+	//task10();
+	task11();
 }
 
