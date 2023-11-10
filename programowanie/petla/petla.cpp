@@ -111,6 +111,12 @@ void task11()
 	}
 }
 
+//12Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+void task12()
+{
+
+}
+
 int main()
 {
 	//task6();
@@ -118,6 +124,8 @@ int main()
 	//task8();
 	//task9();
 	//task10();
-	task11();
+	//task11();
+	task12();
+
 }
 
