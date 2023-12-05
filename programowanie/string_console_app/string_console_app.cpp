@@ -1,120 +1,176 @@
+ï»¿#include <iostream>
+#include <string>
 
-#include <iostream>
 using namespace std;
 
 /*
-* Napisz program, który bêdzie prosi³ o has³o. Nie przepuœci dalej dopóki nie zostanie ono podane prawid³owo.
-* Napisz program, który pobiera od u¿ytkownika ci¹g znaków i wyœwietla liczbê samog³osek i spó³g³osek w tym ci¹gu.
-* Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym. Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
-* Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
-* Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
+* Napisz program, ktÃ³ry bÄ™dzie prosiÅ‚ o hasÅ‚o. Nie przepuÅ›ci dalej dopÃ³ki nie zostanie ono podane prawidÅ‚owo.
+* Napisz program, ktÃ³ry pobiera od uÅ¼ytkownika ciÄ…g znakÃ³w i wyÅ›wietla liczbÄ™ samogÅ‚osek i spÃ³Å‚gÅ‚osek w tym ciÄ…gu.
+* PoproÅ› uÅ¼ytkownika o wprowadzenie liczby caÅ‚kowitej w systemie dziesiÄ™tnym. NastÄ™pnie skonwertuj tÄ™ liczbÄ™ na system dwÃ³jkowy (binarny) i wyÅ›wietl wynik.
+*
+* Program sprawdzajÄ…cy czy podane dwa sÅ‚owa sÄ… anagramami (czyli takimi, ktÃ³re zawierajÄ… te same litery, ale w innym ukÅ‚adzie, np. "klasa" i "salka")
 *
 
-* Program wyci¹gaj¹cy informacje z numeru PESEL
-* Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
+* Program wyciÄ…gajÄ…cy informacje z numeru PESEL
+* Program implementujÄ…cy algorytm szyfrowania Cezara (proste szyfrowanie, w ktÃ³rym kaÅ¼dy znak w tekÅ›cie jest zastÄ™powany innym znakiem, przesuniÄ™tym o staÅ‚Ä… liczbÄ™ pozycji w alfabecie).
 
 
-* Program który na wejœciu przyjmie równanie a na wyjœciu da równanie w odwrotnej notacji polskiej ONP. Np. na wejœciu 2+3*4 na wyjœcu da 234*+
-* Program, który na wejœciu przyjmie rówanie w ONP a na wyjœciu wyœwietli wynik rówania.
+* Program ktÃ³ry na wejÅ›ciu przyjmie rÃ³wnanie a na wyjÅ›ciu da rÃ³wnanie w odwrotnej notacji polskiej ONP. Np. na wejÅ›ciu 2+3*4 na wyjÅ›cu da 234*+
+* Program, ktÃ³ry na wejÅ›ciu przyjmie rÃ³wanie w ONP a na wyjÅ›ciu wyÅ›wietli wynik rÃ³wania.
 */
 
-//*Napisz program, który bêdzie prosi³ o has³o.Nie przepuœci dalej dopóki nie zostanie ono podane prawid³owo.
-
+//napisz program ktory wczyta znak z klawiatury
 void task1()
 {
-    char signFromUser;
-    //signFromUser = 'a';
-    std::cout << "Podaj znak\n";
-    std::cin >> signFromUser;
-
-    std::cout << "Poda³eœ znak " << signFromUser << "\n";
-
-    //if (signFromUser >= 97 && signFromUser <= 122)
-    if (signFromUser >= 'a' && signFromUser <= 'z')
-        std::cout << "Znak jest ma³¹ liter¹ alfabetu\n";
-    else
-        std::cout << "Znak nie jest ma³¹ liter¹ alfabetu\n";
-
-    signFromUser = signFromUser + 2;
-    std::cout << "Poda³eœ znak " << signFromUser << "\n";
-
-    signFromUser = 'a' + 2;
-    std::cout << "Poda³eœ znak " << signFromUser << "\n";
+	string characterFromUser;
+	cout << "Enter any character: " << endl;
+	cin >> characterFromUser;
+	cout << "Your character is: " << '"' << characterFromUser << '"' << "." << endl;
 }
 
-
-//Napisz program, który poprosi cie o twoje imiê i ciê przywita.
+//napisz program ktory poprosi cie o twoje imie i cie przywita.
 void task2()
 {
-    std::string userName;
-    //userName = "Ala";
-    std::cout << "Podaj swoje imiê:\n";
-    std::cin >> userName;
-
-    std::cout << "Witaj " << userName << " tutaj.\n";
+	string nameFromUser;
+	cout << "Enter your name: " << endl;
+	cin >> nameFromUser;
+	cout << "Hi " << nameFromUser << "." << endl;
 }
 
-//Napisz program, który policzy ile w napisie jest liter 'a'.
 void task3()
 {
-    std::string textFromUser;
-    std::cout << "Podaj tekst\n";
-    std::cin >> textFromUser;
+	char signFromUser;
 
-    //textFromUser = "";
-    //textFromUser[0] = 'h';
-    //std::cout << textFromUser[1] << "\n";
-    //std::cout << textFromUser.length() << "\n"; 
-    //if (textFromUser == "Ala")
+	cout << "Enter sign: " << endl;
+	cin >> signFromUser;
 
-    int counter = 0;
-    for (int i = 0; i < textFromUser.length(); i++)
-    {
-        if (textFromUser[i] == 'a')
-            counter++;
-    }
+	cout << "You entered sign: " << signFromUser << endl;
 
-    std::cout << "Ma³ych liter 'a' jest " << counter << "\n";
+	if (signFromUser >= 'a' && signFromUser <= 'z')
+	{
+		cout << "Sign is small letter. " << endl;
+	}
+	else
+	{
+		cout << "Sign is capital letter. " << endl;
+	}
 }
 
-//*Napisz program, który bêdzie prosi³ o has³o.Nie przepuœci dalej dopóki nie zostanie ono podane prawid³owo.
 void task4()
 {
-    string password = "abcdefg";
-    string passwordFromUser;
+	string userName;
+	cout << "Enter your name: " << endl;
+	cin >> userName;
 
-    while (true)
-    {
-        cout << "Enter password" << endl;
-        cin >> passwordFromUser;
-        if (passwordFromUser == password)
-        {
-            cout << "Password is correct" << endl;
-        }
-        else
-        {
-            cout << "Password isn't correct" << endl;
-        }
-         
-    }
-
-        
+	cout << "Hi " << userName << "!!" << endl;
 }
 
-//*Napisz program, który pobiera od u¿ytkownika ci¹g znaków i wyœwietla liczbê samog³osek i spó³g³osek w tym ci¹gu.
+//*Napisz program, ktÃ³ry bÄ™dzie prosiÅ‚ o hasÅ‚o.Nie przepuÅ›ci dalej dopÃ³ki nie zostanie ono podane prawidÅ‚owo
+
 void task5()
 {
-    
+	string password = "abc123";
+	string textFromUser;
+
+
+
+
+	while (true)
+	{
+		cout << "Enter password: " << endl;
+		cin >> textFromUser;
+
+		if (textFromUser == password)
+		{
+			break;
+		}
+		else
+		{
+			cout << "Password isn't correct. " << endl;
+
+		}
+	}
+	cout << "Password is correct. " << endl;
+
+
+
+}
+//* Napisz program, ktÃ³ry pobiera od uÅ¼ytkownika ciÄ…g znakÃ³w i wyÅ›wietla liczbÄ™ samogÅ‚osek i spÃ³Å‚gÅ‚osek w tym ciÄ…gu.
+
+void task6()
+{
+	string vowels = "aeiouyAEIOUY";
+	string textFromUser;
+
+	cout << "Enter text: " << endl;
+	cin >> textFromUser;
+
+	for (int i = 0; i < textFromUser.length(); i++)
+	{
+		for (int j = 0; j < vowels.length(); j++)
+		{
+			if (textFromUser[i] == vowels[j])
+			{
+				cout << vowels[j] << " to samogloska. ";
+			}
+		}
+
+		cout << endl;
+	}
+}
+//PoproÅ› uÅ¼ytkownika o wprowadzenie liczby caÅ‚kowitej w systemie dziesiÄ™tnym. NastÄ™pnie skonwertuj tÄ™ liczbÄ™ na system dwÃ³jkowy (binarny) i wyÅ›wietl wynik.
+
+void task7()
+{
+	int number;
+	string binaryNumber = "";
+
+	cout << "Enter number: " << endl;
+	cin >> number;
+
+	do
+	{
+		binaryNumber = to_string(number % 2) + binaryNumber;
+	} while (number != 0);
+	cout << binaryNumber << endl;
 }
 
+//* Program sprawdzajÄ…cy czy podany ciÄ…g znakÃ³w jest palindromem (czyli takim, ktÃ³ry czytany od tyÅ‚u jest taki sam, jak czytany od przodu, np. "kajak")
+
+void task8()
+{
+	string textPalindrome = "";
+	string textFromUser;
+
+	cout << "Enter text: " << endl;
+	cin >> textFromUser;
+	for (int i = textFromUser.length() - 1; i >= 0; i--)
+	{
+		textPalindrome += textFromUser[i];
+	}
+	if (textFromUser == textPalindrome)
+		std::cout << textFromUser << "  is palindrome.";
+	else
+		std::cout << textFromUser << "  isn't palindrome.";
+}
+
+//Program sprawdzajÄ…cy czy podane dwa sÅ‚owa sÄ… anagramami(czyli takimi, ktÃ³re zawierajÄ… te same litery, ale w innym ukÅ‚adzie, np. "klasa" i "salka")
+
+void task9()
+{
+	string firstText = "klasa";
+	string secondText = "salka";
+	
 
 int main()
 {
-    //task4();
-    task5();
+	//task1();
+	//task2();
+	//task3();
+	//task4();
+	//task5();
+	//task6();
+	//task7();
+	//task8();
+	task9();
 }
-
-
-
-
-
