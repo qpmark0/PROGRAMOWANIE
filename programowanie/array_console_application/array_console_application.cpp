@@ -10,7 +10,7 @@ void task1()
         cout << "Podaj liczbe" << endl;
         cin >> numbers[i];
     }
-    for ( i = SIZE_OF_ARRAY - 1; i >= 0; i--)
+    for ( int i = SIZE_OF_ARRAY - 1; i >= 0; i--)
     {
         cout << "Podana liczba " << numbers[i] << endl;
     }
