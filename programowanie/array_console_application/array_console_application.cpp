@@ -29,8 +29,14 @@ void task2()
     }
     for (int i = 0; i < SIZE_OF_ARRAY; i++)
         cout << numbers[i] << "," << endl;
-        
+    int max = numbers[0];
+    for (int i = 1; i < SIZE_OF_ARRAY; i++)
+    {
+        if (numbers[i] > max)
+            max = numbers[i]
+    }
 }
+
 int main()
 {
     task2();
