@@ -84,9 +84,51 @@ void task4()
         cout << "liczba" << numberFromRange << "Wystapila" << numberOfOccurences << "razy" << endl;
     }
 }
+
+void task5()
+{
+    const int UPPER_RANGE = 1000000;
+        // for (int numberToCheck = 2; numberToCheck <= UPPER_RANGE; numberToCheck++)
+        // {
+            // bool isPrime = true;
+            // for (int i = 2; i <= sqrt(numberToCheck) ; i++)
+             //{
+               //  if (numberToCheck % i == 0)
+                // {
+                 //    isPrime = false;
+                 //    break;
+                // }
+            // }
+
+       //  }
+        // if (isPrime)
+            // cout << numberToCheck << endl;
+
+        bool primeNumbers[UPPER_RANGE + 1];
+        for (int i = 2; i < UPPER_RANGE + 1; i++)
+        {
+            primeNumbers[i] = true;
+        }
+        for (int i = 2; i < UPPER_RANGE + 1; i++)
+        {
+            if(primeNumbers[i])
+            {
+                for (int j = i + i ; j < UPPER_RANGE + 1; j = j + i)
+                {
+                    primeNumbers[j] = false;
+                }
+            }
+        }
+        for (int i = 2; i < UPPER_RANGE + 1; i++)
+        {
+            if (primeNumbers[i])
+                cout << i << endl;
+        }
+}
+
 int main()
 {
-    task2();
+    task5();
 }
 
    
