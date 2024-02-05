@@ -3,19 +3,11 @@ using namespace std;
 
 struct point
 {
-	int x; 
+	int x;
 	int y;
 	int z;
-		
+
 };
-
-double DistanceFromCenter(int x, int y, int z)
-{
-	double distance;
-	distance = sqrt(x * x + y * y + z * z);
-
-		return distance;
-}
 
 double DistaneFromcenter(point p)
 {
@@ -23,6 +15,7 @@ double DistaneFromcenter(point p)
 	distance = sqrt(p.x * p.x + p.y * p.y + p.z + p.z);
 	return distance;
 }
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
@@ -43,7 +36,7 @@ int main()
 	int xx[50], yy[50], zz[50];
 	xx[3] = 5;
 	yy[3] = 7;
-	zz[3] = 77;       
+	zz[3] = 77;
 	point firstPoint;
 	firstPoint.x = 3;
 	firstPoint.y = 5;
@@ -53,5 +46,5 @@ int main()
 
 	point tabOfPoints[15];
 	tabOfPoints[2].y = 68;
-		
+
 }
