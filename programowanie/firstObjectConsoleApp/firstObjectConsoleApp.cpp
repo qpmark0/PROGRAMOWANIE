@@ -1,12 +1,51 @@
 #include <iostream>
 using namespace std;
 
-struct point
+class Point
 {
+private:
 	int x;
 	int y;
 	int z;
 
+public:
+	Point()
+{
+		x = 3;
+		y = 7;
+		z = 10;
+}
+
+	Point(int xx)
+	{
+		x = xx;
+		y = 7;
+		z = 10;
+	}
+
+	Point(int xx, int yy, int zz)
+	{
+		x = xx;
+		y = yy;
+		z = zz;
+	}
+
+	void SetX(int value)
+	{
+		//x = abs(value);
+		if (value >= 0)
+			x = value;
+		else {
+			//reakcja na b³¹d
+		}
+
+	}
+
+	int GetX()
+	{
+		//if (uprawnienia)
+		return x;  
+	}
 };
 
 double DistaneFromcenter(point p)
@@ -37,14 +76,17 @@ int main()
 	xx[3] = 5;
 	yy[3] = 7;
 	zz[3] = 77;
-	point firstPoint;
+	Point firstPoint;
 	firstPoint.x = 3;
 	firstPoint.y = 5;
 	firstPoint.z = 8;
 	cout << "Odleg³oœæ" << DistanceFromCenter(firstPoint.x, firstPoint.y, firstPoint.z);
 	cout << "Odleg³oœæ" << DistanceFromCenter(firstPoint) << endl;
 
-	point tabOfPoints[15];
+	Point tabOfPoints[15];
 	tabOfPoints[2].y = 68;
+
+	Point secondpoint(15);
+	cout << "Odleg³oœc" << secondPoint.DistanceFromCenter() << endl;
 
 }
