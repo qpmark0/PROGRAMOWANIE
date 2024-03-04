@@ -87,6 +87,6 @@ int main()
 	tabOfPoints[2].y = 68;
 
 	Point secondpoint(15);
-	cout << "Odleg³oœc" << secondPoint.DistanceFromCenter() << endl;
+	cout << "Odleg³oœc" << secondPoint.DistanceFromCenter() << endl;   
 
 }
