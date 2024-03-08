@@ -98,8 +98,107 @@ public:
 	}
 };
 
+/*
+ZADANIE
+Zdefiniuj klase opisuj¹ce konto bankowe. Mo¿liwoœci klasy:
+* konstruktory
+* metoda która dokona wp³aty na konto
+* metoda która wyp³aty z konta
+* metoda która wykona przelew na inne konto
+* metodê która poka¿e informacje o koncie.
+
+Napisz program który zaprezentuje mo¿liwoœci obiektu na podstawie tej klasy.
+*/
+
+class kontoBankowe
+{
+private:
+	string numerKonta;
+	string wlasciciel;
+	double stanKonta;
+public:
+	//konstuktor
+	kontoBankowe(string numerKonta, string wlasciciel, double stanNaPoczatku = 0.00)
+	{
+		this->wlasciciel = wlasciciel;
+		stanKonta = stanNaPoczatku;
+
+	}
+	void Deposit(double sum)
+	{
+		stanKonta += sum;
+	}
+
+	void wycofano(double sum) {
+		if (stanKonta >= sum) {
+			stanKonta -= sum;
+			cout << "Wycofany: " << sum << " PLN." << endl;
+		}
+		else {
+			cout << "Na Twoim koncie nie ma wystarczaj¹cych œrodków." << endl;
+		}
+	}
+
+	void
+		Transfer(double sum, string kontoDocelowe)
+	{
+		if (stanKonta >= sum)
+		{
+			stanKonta -= sum;
+			cout << "Fundusze zosta³u przes³ane na konto: " << kontoDocelowe << " in a sum of: " << sum << " PLN." << endl;
+
+		}
+		else
+		{
+			cout << "Niewystarczaj¹ce œrodki na koncie" << endl;
+		}
+
+	}
+
+	void ShowInfo()
+	{
+		cout << "Numer konta: " << numerKonta << endl;
+		cout << "w³aœciciel konta: " << wlasciciel << endl;
+		cout << "stan konta: " << stanKonta << endl;
+	}
+};
+
+void ShowBankInfo()
+{
+	kontoBankowe account("1234567890", "Jan Kowalski", 1000.0);
+
+	account.ShowInfo();
+
+	account.Deposit(500.0);
+	account.ShowInfo();
+
+	account.Deposit(200.0);
+	account.ShowInfo();
+
+	account.Transfer(300.0, "0987654321");
+	account.ShowInfo();
+}
+
+void RectExercises()
+{
+	Rectangle firstRectangle;
+	cout << "Area: " << firstRectangle.getArea() << endl;
+	cout << "Perimeter: " << firstRectangle.getPerimeter() << endl;
+	firstRectangle.getInfo();
+}
+
+void StartRectangle() {
+	Rectangle firstRectangle;
+	cout << "Area: " << firstRectangle.getArea() << endl;
+	cout << "Perimeter: " << firstRectangle.getPerimeter() << endl;
+	firstRectangle.getInfo();
+}
+
+
+
 int main()
 {
+	setlocale(LC_CTYPE, "Polish");
 	//Point firstPoint;
 	////firstPoint.x = 3;
 	//firstPoint.SetX(-3);
@@ -110,11 +209,5 @@ int main()
 	//Point secondPiont(15);
 	//cout << "Distance " << secondPiont.DistanceFromCenter() << "\n";
 
-	Rectangle firstRectangle;
-	cout << "Area: " << firstRectangle.getArea() << endl;
-	cout << "Perimeter: " << firstRectangle.getPerimeter() << endl;
-	firstRectangle.getInfo();
+	ShowBankInfo();
 }
-
-
-
