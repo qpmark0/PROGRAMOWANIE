@@ -81,18 +81,18 @@ public:
 
 
 
-	float getArea() {
+	float GetArea() {
 		return lenght * height;
 	}
 
-	float getPerimeter() {
+	float GetPerimeter() {
 		return lenght * 2 + height * 2;
 	}
 
-	void getInfo() {
+	void GetInfo() {
 
-		cout << "Area: " << getArea() << endl;
-		cout << "Perimeter: " << getPerimeter() << endl;
+		cout << "Area: " << GetArea() << endl;
+		cout << "Perimeter: " << GetPerimeter() << endl;
 		cout << "Height: " << height << endl;
 		cout << "Lenght: " << lenght << endl;
 	}
@@ -110,7 +110,7 @@ Zdefiniuj klase opisuj¹ce konto bankowe. Mo¿liwoœci klasy:
 Napisz program który zaprezentuje mo¿liwoœci obiektu na podstawie tej klasy.
 */
 
-class kontoBankowe
+class KontoBankowe
 {
 private:
 	string numerKonta;
@@ -118,7 +118,7 @@ private:
 	double stanKonta;
 public:
 	//konstuktor
-	kontoBankowe(string numerKonta, string wlasciciel, double stanNaPoczatku = 0.00)
+	KontoBankowe(string numerKonta, string wlasciciel, double stanNaPoczatku = 0.00)
 	{
 		this->wlasciciel = wlasciciel;
 		stanKonta = stanNaPoczatku;
@@ -129,7 +129,7 @@ public:
 		stanKonta += sum;
 	}
 
-	void wycofano(double sum) {
+	void Wycofano(double sum) {
 		if (stanKonta >= sum) {
 			stanKonta -= sum;
 			cout << "Wycofany: " << sum << " PLN." << endl;
@@ -139,14 +139,13 @@ public:
 		}
 	}
 
-	void
-		Transfer(double sum, string kontoDocelowe)
+	void Transfer(double sum, KontoBankowe &kontoDocelowe)
 	{
 		if (stanKonta >= sum)
 		{
 			stanKonta -= sum;
-			cout << "Fundusze zosta³u przes³ane na konto: " << kontoDocelowe << " in a sum of: " << sum << " PLN." << endl;
-
+			
+			kontoDocelowe.Deposit(sum);
 		}
 		else
 		{
@@ -165,7 +164,7 @@ public:
 
 void ShowBankInfo()
 {
-	kontoBankowe account("1234567890", "Jan Kowalski", 1000.0);
+	KontoBankowe account("1234567890", "Jan Kowalski", 1000.0);
 
 	account.ShowInfo();
 
@@ -182,16 +181,17 @@ void ShowBankInfo()
 void RectExercises()
 {
 	Rectangle firstRectangle;
-	cout << "Area: " << firstRectangle.getArea() << endl;
-	cout << "Perimeter: " << firstRectangle.getPerimeter() << endl;
-	firstRectangle.getInfo();
+	cout << "Area: " << firstRectangle.GetArea() << endl;
+	cout << "Perimeter: " << firstRectangle.GetPerimeter() << endl;
+	firstRectangle.GetInfo();
 }
 
 void StartRectangle() {
 	Rectangle firstRectangle;
-	cout << "Area: " << firstRectangle.getArea() << endl;
-	cout << "Perimeter: " << firstRectangle.getPerimeter() << endl;
-	firstRectangle.getInfo();
+	cout << "Area: " << firstRectangle.GetArea() << endl;
+
+	cout << "Perimeter: " << firstRectangle.GetPerimeter() << endl;
+	firstRectangle.GetInfo();
 }
 
 
