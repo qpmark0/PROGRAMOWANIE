@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.2 dziedziczenie", "0.2 dz
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dziedziczenie", "dziedziczenie\dziedziczenie.vcxproj", "{50FACB27-1C86-4E18-87E8-D7EE70F48079}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zadania", "zadania\zadania.vcxproj", "{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -119,6 +121,14 @@ Global
 		{50FACB27-1C86-4E18-87E8-D7EE70F48079}.Release|x64.Build.0 = Release|x64
 		{50FACB27-1C86-4E18-87E8-D7EE70F48079}.Release|x86.ActiveCfg = Release|Win32
 		{50FACB27-1C86-4E18-87E8-D7EE70F48079}.Release|x86.Build.0 = Release|Win32
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Debug|x64.ActiveCfg = Debug|x64
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Debug|x64.Build.0 = Debug|x64
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Debug|x86.ActiveCfg = Debug|Win32
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Debug|x86.Build.0 = Debug|Win32
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Release|x64.ActiveCfg = Release|x64
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Release|x64.Build.0 = Release|x64
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Release|x86.ActiveCfg = Release|Win32
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +150,7 @@ Global
 		{16FC6942-970E-4E51-A3BB-B0AC0B2B4267} = {7424C017-99C7-47CD-949D-6A7FAFBFF35C}
 		{712FD463-AA9F-4919-9983-F559D7CEAAE6} = {7424C017-99C7-47CD-949D-6A7FAFBFF35C}
 		{50FACB27-1C86-4E18-87E8-D7EE70F48079} = {712FD463-AA9F-4919-9983-F559D7CEAAE6}
+		{753BFED4-F91E-4BA5-8AE6-5C7E6D545FC9} = {8A060558-79E7-4A85-8178-611943546D93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CBD7B0B-2007-46AE-80A3-6C438828ADF4}
