@@ -56,6 +56,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAppMauiApp", "FirstApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "impleCalculatorMauiApp", "impleCalculatorMauiApp\impleCalculatorMauiApp.csproj", "{C9025857-05B1-4B04-987D-35157FCFE22D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainPageMauiApp", "MainPageMauiApp\MainPageMauiApp.csproj", "{F94F9C70-1DCC-4257-A601-6DB22CD2715A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -236,6 +238,18 @@ Global
 		{C9025857-05B1-4B04-987D-35157FCFE22D}.Release|x64.Build.0 = Release|Any CPU
 		{C9025857-05B1-4B04-987D-35157FCFE22D}.Release|x86.ActiveCfg = Release|Any CPU
 		{C9025857-05B1-4B04-987D-35157FCFE22D}.Release|x86.Build.0 = Release|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Debug|x64.Build.0 = Debug|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Debug|x86.Build.0 = Debug|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Release|x64.ActiveCfg = Release|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Release|x64.Build.0 = Release|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Release|x86.ActiveCfg = Release|Any CPU
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -263,6 +277,7 @@ Global
 		{5B345F36-8E50-4D62-BC6F-0BDFA298D0CC} = {7424C017-99C7-47CD-949D-6A7FAFBFF35C}
 		{8BE2414B-8965-4BB5-96B6-9E642D7675BB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{C9025857-05B1-4B04-987D-35157FCFE22D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F94F9C70-1DCC-4257-A601-6DB22CD2715A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CBD7B0B-2007-46AE-80A3-6C438828ADF4}
