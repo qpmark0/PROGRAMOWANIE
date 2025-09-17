@@ -16,7 +16,9 @@
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            returnMessageLabel.Text = "Ilość to" + Message.Length;
+            returnMessage= "Ilość to" + Message.Length;
+            //OnPropertyChanged("ReturnMessage");
+            //OnPropertyChanged(nameof(ReturnMessage));
         }
     }
 }
